@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Momo — peças de cerâmica artesanais feitas à mão com carinho."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icones -->
+    <script
+      src="https://kit.fontawesome.com/253d0ae39f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Momo Pottery Shop</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">●</span>
+          <span class="logo-name">momo</span>
+        </a>
+        <nav class="main-nav">
+          <a href="index.html" class="active">Início</a>
+          <a href="pages/loja.html">Loja</a>
+          <a href="pages/sobre.html">Sobre</a>
+          <a href="#">Contato</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="header-button" aria-label="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="header-button" aria-label="Favoritos">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <a
+            href="pages/carrinho.html"
+            class="header-button cart-button"
+            aria-label="Carrinho"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span class="cart-count"> 0 </span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>
+              Peças feitas com
+              <span>carinho.</span>
+            </h1>
+
+            <p>
+              Peças de cerâmica artesanais para trazer um toque especial e
+              aconchegante para os seus momentos.
+            </p>
+
+            <a href="pages/loja.html" class="primary-button">
+              Conhecer as peças
+            </a>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="assets/images/hero-ceramics.jpg"
+              alt="Peças de cerâmica artesanais da Momo"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- CATEGORIAS -->
+      <section class="categories">
+        <div class="section-container">
+          <div class="section-heading">
+            <h2>
+              Encontre sua próxima peça favorita
+              <span>♡</span>
+            </h2>
+          </div>
+
+          <div class="categories-grid">
+            <a href="pages/loja.html?categoria=canecas" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/category-canecas.jpg"
+                  alt="Canecas de cerâmica"
+                />
+              </div>
+
+              <h3>Canecas</h3>
+            </a>
+
+            <a href="pages/loja.html?categoria=vasos" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/category-vasos.jpg"
+                  alt="Vasos de cerâmica"
+                />
+              </div>
+
+              <h3>Vasos</h3>
+            </a>
+
+            <a href="pages/loja.html?categoria=pratos" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/category-pratos.jpg"
+                  alt="Pratos de cerâmica"
+                />
+              </div>
+
+              <h3>Pratos</h3>
+            </a>
+
+            <a href="pages/loja.html?categoria=bowls" class="category-card">
+              <div class="category-image">
+                <img
+                  src="assets/images/category-bowls.jpg"
+                  alt="Bowls de cerâmica"
+                />
+              </div>
+
+              <h3>Bowls</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUTOS EM DESTAQUE -->
+      <section class="featured-products">
+        <div class="section-container">
+          <div class="section-heading">
+            <h2>Feitos à mão para você</h2>
+
+            <p>
+              Peças únicas feitas com cuidado, carinho e um pouquinho de Momo.
+            </p>
+          </div>
+
+          <div class="products-grid" id="featured-products">
+            <!-- Os produtos serão inseridos
+           posteriormente pelo JavaScript. -->
+          </div>
+        </div>
+      </section>
+      <!-- SOBRE -->
+      <section class="about-preview">
+        <div class="section-container">
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                src="assets/images/about.jpg"
+                alt="Processo artesanal da Momo"
+              />
+            </div>
+
+            <div class="about-text">
+              <span class="section-label"> A história da Momo </span>
+
+              <h2>Feito à mão, de verdade.</h2>
+
+              <p>
+                A Momo Pottery Shop nasceu do carinho por criar peças únicas.
+                Cada peça é moldada, esmaltada e finalizada à mão, carregando
+                pequenas características que tornam cada uma especial.
+              </p>
+
+              <a href="pages/sobre.html" class="secondary-button">
+                Conheça a Momo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROCESSO ARTESANAL -->
+      <section class="process">
+        <div class="section-container">
+          <div class="section-heading">
+            <span class="section-label"> O processo </span>
+
+            <h2>Do barro à sua casa.</h2>
+
+            <p>Cada peça passa por várias etapas até chegar às suas mãos.</p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-item">
+              <span class="process-number">01</span>
+
+              <h3>Modelar</h3>
+
+              <p>A argila ganha forma pelas mãos.</p>
+            </div>
+
+            <div class="process-item">
+              <span class="process-number">02</span>
+
+              <h3>Criar</h3>
+
+              <p>Cada detalhe é pensado com cuidado.</p>
+            </div>
+
+            <div class="process-item">
+              <span class="process-number">03</span>
+
+              <h3>Queimar</h3>
+
+              <p>A peça passa pelo forno para ganhar resistência.</p>
+            </div>
+
+            <div class="process-item">
+              <span class="process-number">04</span>
+
+              <h3>Esmaltar</h3>
+
+              <p>Cores e texturas dão personalidade à peça.</p>
+            </div>
+
+            <div class="process-item">
+              <span class="process-number">05</span>
+
+              <h3>Finalizar</h3>
+
+              <p>Tudo é revisado antes de chegar até você.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GALERIA -->
+      <section class="instagram">
+        <div class="section-container">
+          <div class="section-heading">
+            <span class="section-label"> @momo.potteryshop </span>
+
+            <h2>Um pouquinho mais da Momo ♡</h2>
+          </div>
+
+          <div class="instagram-grid">
+            <div class="instagram-item">
+              <img
+                src="assets/images/instagram-01.jpg"
+                alt="Peça de cerâmica Momo"
+              />
+              <div class="instagram-overlay">
+                <span class="instagram-icon-circle">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="instagram-item">
+              <img
+                src="assets/images/instagram-02.jpg"
+                alt="Processo artesanal da Momo"
+              />
+              <div class="instagram-overlay">
+                <span class="instagram-icon-circle">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="instagram-item">
+              <img
+                src="assets/images/instagram-03.jpg"
+                alt="Cerâmica artesanal"
+              />
+              <div class="instagram-overlay">
+                <span class="instagram-icon-circle">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="instagram-item">
+              <img
+                src="assets/images/instagram-04.jpg"
+                alt="Peças artesanais da Momo"
+              />
+              <div class="instagram-overlay">
+                <span class="instagram-icon-circle">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="secondary-button"> Ver no Instagram </a>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">●</span>
+            <span class="logo-name">momo</span>
+          </a>
+
+          <p>Cerâmica artesanal feita à mão ♡</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explorar</h3>
+
+          <a href="index.html">Início</a>
+          <a href="pages/loja.html">Loja</a>
+          <a href="pages/sobre.html">Sobre</a>
+          <a href="#">Contato</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Informações</h3>
+
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+
+        <div class="footer-social">
+          <h3>Vamos conversar?</h3>
+
+          <a
+            href="https://www.instagram.com/momo.potteryshop?igsi+MXRoM2lkbGp0bjAwMg%3D%3D&utm_source=qr"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Momo. Feito com carinho.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- Produtos -->
+<script src="js/products.js"></script>
+<!-- Carrinho -->
+<script src="js/cart.js"></script>
+<!-- JavaScript principal -->
+<script src="js/main.js"></script>

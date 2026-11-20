@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Loja — Momo Pottery Shop</title>
+
+    <meta
+      name="description"
+      content="Conheça as peças artesanais da Momo Pottery Shop."
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/shop.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+      <div class="header-container">
+        <!-- LOGO -->
+
+        <a href="../index.html" class="logo">
+          <span class="logo-icon"> ● </span>
+
+          <span class="logo-name"> momo </span>
+        </a>
+
+        <!-- NAVEGAÇÃO -->
+
+        <nav class="main-nav">
+          <a href="../index.html"> Início </a>
+
+          <a href="loja.html" class="active"> Loja </a>
+
+          <a href="sobre.html"> Sobre </a>
+
+          <a href="#"> Contato </a>
+        </nav>
+
+        <!-- AÇÕES -->
+
+        <div class="header-actions">
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button
+            class="header-button shop-search-button"
+            aria-label="Pesquisar"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button class="header-button" aria-label="Favoritos">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+
+          <a
+            href="carrinho.html"
+            class="header-button cart-button"
+            aria-label="Carrinho"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span class="cart-count"> 0 </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         LOJA
+    ========================================== -->
+
+    <main class="shop-page">
+      <!-- =====================================
+             CABEÇALHO DA LOJA
+        ====================================== -->
+
+      <section class="shop-hero">
+        <div class="section-container">
+          <span class="section-label"> Loja </span>
+
+          <h1>Todas as peças</h1>
+
+          <p>
+            Encontre uma peça feita especialmente para fazer parte da sua
+            história.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================
+             CATÁLOGO
+        ====================================== -->
+
+      <section class="shop-catalog">
+        <div class="section-container">
+          <!-- =================================
+                     BUSCA
+                ================================== -->
+
+          <div class="shop-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="search"
+              id="shop-search-input"
+              placeholder="Buscar uma peça..."
+              autocomplete="off"
+            />
+
+            <button
+              class="clear-search"
+              id="clear-search"
+              aria-label="Limpar pesquisa"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- =================================
+                     FILTROS E ORDENAÇÃO
+                ================================== -->
+
+          <div class="shop-toolbar">
+            <!-- CATEGORIAS -->
+
+            <div class="shop-filters" id="shop-filters">
+              <button class="filter-button active" data-category="todos">
+                Todas
+              </button>
+
+              <button class="filter-button" data-category="Canecas">
+                Canecas
+              </button>
+
+              <button class="filter-button" data-category="Vasos">Vasos</button>
+
+              <button class="filter-button" data-category="Pratos">
+                Pratos
+              </button>
+
+              <button class="filter-button" data-category="Bowls">Bowls</button>
+            </div>
+
+            <!-- ORDENAÇÃO -->
+
+            <div class="shop-sort">
+              <label for="sort-products"> Ordenar por: </label>
+
+              <select id="sort-products">
+                <option value="default">Mais recentes</option>
+
+                <option value="price-low">Menor preço</option>
+
+                <option value="price-high">Maior preço</option>
+
+                <option value="name">Nome A–Z</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- =================================
+                     RESULTADOS
+                ================================== -->
+
+          <div class="shop-results-info">
+            <span id="products-count"> 0 peças </span>
+          </div>
+
+          <!-- =================================
+                     PRODUTOS
+                ================================== -->
+
+          <div class="shop-products-grid" id="shop-products">
+            <!-- Gerado pelo JavaScript -->
+          </div>
+
+          <!-- =================================
+                     NENHUM RESULTADO
+                ================================== -->
+
+          <div class="no-products" id="no-products">
+            <div class="no-products-icon">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <h2>Nenhuma peça encontrada</h2>
+
+            <p>Tente buscar outro nome ou escolher uma categoria diferente.</p>
+
+            <button class="secondary-button" id="reset-filters">
+              Ver todas as peças
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <span class="logo-icon"> ● </span>
+
+            <span class="logo-name"> momo </span>
+          </a>
+
+          <p>Cerâmica artesanal feita à mão ♡</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explorar</h3>
+
+          <a href="../index.html"> Início </a>
+
+          <a href="loja.html"> Loja </a>
+
+          <a href="sobre.html"> Sobre </a>
+
+          <a href="#"> Contato </a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Informações</h3>
+
+          <a href="#"> Política de privacidade </a>
+
+          <a href="#"> Termos de uso </a>
+        </div>
+
+        <div class="footer-social">
+          <h3>Vamos conversar?</h3>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Momo. Feito com carinho.</p>
+      </div>
+    </footer>
+
+    <!-- FONT AWESOME -->
+
+    <script
+      src="https://kit.fontawesome.com/253d0ae39f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- PRODUTOS -->
+
+    <script src="../js/products.js"></script>
+
+    <!-- CARRINHO -->
+
+    <script src="../js/cart.js"></script>
+
+    <!-- PRINCIPAL -->
+
+    <script src="../js/main.js"></script>
+
+    <!-- LOJA -->
+
+    <script src="../js/loja.js"></script>
+  </body>
+</html>

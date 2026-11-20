@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seu Carrinho</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- CSS do carrinho -->
+
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+      <div class="header-container">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">●</span>
+
+          <span class="logo-name"> momo </span>
+        </a>
+
+        <nav class="main-nav">
+          <a href="../index.html"> Início </a>
+
+          <a href="loja.html"> Loja </a>
+
+          <a href="sobre.html"> Sobre </a>
+
+          <a href="#"> Contato </a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button class="header-button" aria-label="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button class="header-button" aria-label="Favoritos">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+
+          <a
+            href="carrinho.html"
+            class="header-button cart-button"
+            aria-label="Carrinho"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span class="cart-count"> 0 </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         CARRINHO
+    ========================================== -->
+
+    <main class="cart-page">
+      <div class="section-container">
+        <div class="cart-heading">
+          <span class="section-label"> Suas escolhas </span>
+
+          <h1>Seu carrinho ♡</h1>
+
+          <p>Confira suas peças antes de continuar.</p>
+        </div>
+
+        <div class="cart-layout">
+          <!-- PRODUTOS -->
+
+          <section class="cart-items" id="cart-items">
+            <!-- Produtos inseridos pelo JavaScript -->
+          </section>
+
+          <!-- RESUMO -->
+
+          <aside class="cart-summary">
+            <h2>Resumo do pedido</h2>
+
+            <div class="summary-line">
+              <span> Produtos </span>
+
+              <span id="summary-items"> 0 itens </span>
+            </div>
+
+            <div class="summary-line">
+              <span> Subtotal </span>
+
+              <strong id="cart-subtotal"> R$ 0,00 </strong>
+            </div>
+
+            <div class="summary-line">
+              <span> Entrega </span>
+
+              <span class="delivery-text"> A calcular </span>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <span> Total </span>
+
+              <strong id="cart-total"> R$ 0,00 </strong>
+            </div>
+
+            <a
+              href="checkout.html"
+              class="checkout-button"
+              id="checkout-button"
+            >
+              Continuar para o checkout
+            </a>
+
+            <p class="cart-message">
+              Cada pedido é preparado com muito carinho ♡
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <span class="logo-icon">●</span>
+
+            <span class="logo-name"> momo </span>
+          </a>
+
+          <p>Cerâmica artesanal feita à mão ♡</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explorar</h3>
+
+          <a href="../index.html">Início</a>
+          <a href="loja.html">Loja</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="#">Contato</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Informações</h3>
+
+          <a href="#"> Política de privacidade </a>
+
+          <a href="#"> Termos de uso </a>
+        </div>
+
+        <div class="footer-social">
+          <h3>Vamos conversar?</h3>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Momo. Feito com carinho.</p>
+      </div>
+    </footer>
+
+    <!-- FONT AWESOME -->
+
+    <script
+      src="https://kit.fontawesome.com/253d0ae39f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- PRODUTOS -->
+
+    <script src="../js/products.js"></script>
+
+    <!-- CARRINHO -->
+
+    <script src="../js/cart.js"></script>
+
+    <!-- PRINCIPAL -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
